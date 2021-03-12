@@ -32,7 +32,7 @@ namespace Calculadora
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            
+             
         }
     }
 }
