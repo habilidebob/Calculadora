@@ -32,7 +32,10 @@ namespace Calculadora
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-             
+            DataTable dt = new DataTable();
+            string tela = txbTela.Text;
+            var v = dt.Compute(tela, "");
+            txbTela.Text = v.ToString();
         }
     }
 }
