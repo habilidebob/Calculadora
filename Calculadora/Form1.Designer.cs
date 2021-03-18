@@ -45,6 +45,7 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
             this.txbTela = new System.Windows.Forms.TextBox();
+            this.txbAux = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn1
@@ -215,6 +216,7 @@
             this.btnLimpar.TabIndex = 14;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnIgual
             // 
@@ -239,11 +241,24 @@
             this.txbTela.TabIndex = 16;
             this.txbTela.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // txbAux
+            // 
+            this.txbAux.BackColor = System.Drawing.SystemColors.Control;
+            this.txbAux.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAux.ForeColor = System.Drawing.Color.Blue;
+            this.txbAux.Location = new System.Drawing.Point(12, 20);
+            this.txbAux.Name = "txbAux";
+            this.txbAux.ReadOnly = true;
+            this.txbAux.Size = new System.Drawing.Size(302, 20);
+            this.txbAux.TabIndex = 17;
+            this.txbAux.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 391);
+            this.Controls.Add(this.txbAux);
             this.Controls.Add(this.txbTela);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnLimpar);
@@ -287,6 +302,7 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.TextBox txbTela;
+        private System.Windows.Forms.TextBox txbAux;
     }
 }
 
